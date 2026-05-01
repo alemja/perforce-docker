@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Perforce</Name>
+  <Repository>hcr.io/alemja/perforce-docker:main</Repository>
+  <Registry></Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Project></Project>
+  <Support></Support>
+  <Overview>
+      Perforce P4 (formerly Helix Core) is the industry standard version control platform for game development. Trusted by 19/20 of the top AAA game development studios, and award-winning studios large and small, P4 gives your teams a version control foundation for creating without limits.
+  <Overview>
+  <Category>Backup: Cloud: Productivity: Tools:</Category>
+  <WebUI></WebUI>
+  <Icon>https://raw.githubusercontent.com/alemja/perforce-docker/main/images/p4-icon.png</Icon>
+  <Requires>Works in progress, things may change and it should not be considered stable</Requires>
+  <Config Name="P4Port" Target="1666" Default="1666" Mode="tcp" Description="Container Port: 1666" Type="Port" Display="always" Required="true" Mask="false">1666</Config>
+  <Config Name="Data Storage Path" Target="/data" Default="/mnt/user/appdata/perforce" Mode="rw" Description="Container Path: /data" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/perforce</Config>
+  <Config Name="Logs Storage Path" Target="/data/p4depot/logs" Default="/mnt/user/appdata/perforce-server/logs" Mode="rw" Description="Container Path: /data/p4depot/logs" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/perforce-server/logs</Config>
+  <Config Name="P4serverID" Target="P4serverID" Default="perforce" Mode="" Description="Get or Set the unique ID associated with a P4 Server. More information: https://help.perforce.com/helix-core/server-apps/cmdref/current/Content/CmdRef/p4_serverid.html" Type="Variable" Display="always" Required="true" Mask="false">perforce</Config>
+  <Config Name="P4 Admin User" Target="P4USER" Default="admin" Mode="" Description="Set Admin Account, further account setups require this account" Type="Variable" Display="always" Required="true" Mask="false">admin</Config>
+  <Config Name="P4 Admin Password" Target="P4PASSWD" Default="pass12349ers!" Mode="" Description="Set Admin password, it is recommend to change it to something other than default" Type="Variable" Display="always" Required="true" Mask="true">pass12349ers!</Config>
+</Container>
