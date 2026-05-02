@@ -12,7 +12,7 @@
   <Overview>
   <Category>Backup: Cloud: Productivity: Tools:</Category>
   <WebUI></WebUI>
-  <Icon>https://raw.githubusercontent.com/alemja/perforce-docker/main/images/p4-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/alemja/perforce-docker/refs/heads/main/images/p4-icon.png</Icon>
   <Requires>Works in progress, things may change and it should not be considered stable</Requires>
   <Config Name="P4Port" Target="1666" Default="1666" Mode="tcp" Description="Container Port: 1666" Type="Port" Display="always" Required="true" Mask="false">1666</Config>
   <Config Name="Data Storage Path" Target="/data" Default="/mnt/user/appdata/perforce" Mode="rw" Description="Container Path: /data" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/perforce</Config>
